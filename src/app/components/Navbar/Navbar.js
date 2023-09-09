@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from './Navbar.module.css'
+
 
 export default function Navbar() {
   return (
-    <nav className={styles.navbar}>
-        <Link href="/">Accueil</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/liste">Liste</Link>
+    <nav className="navbar navbar-dark bg-primary">
+      <div className="container-fluid justify-content-center">
+        <Link href="/" className='navbar-brand mx-4'>Accueil</Link>
+        <Link href="/blog" className='navbar-brand mx-4'>Blog</Link>
+        <Link href="/liste" className='navbar-brand mx-4'>Liste</Link>
+      </div>
     </nav>
   )
 }
